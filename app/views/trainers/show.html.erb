@@ -2,3 +2,7 @@
 <p>Name: <%= @trainer.name if @trainer.name %></p>
 <p>Email: <%= @trainer.email if @trainer.email %></p>
 
+
+<% @trainer.pokemons.each do |pokemon| %>
+	<p> Name: <%= pokemon.name %> <br> Level <%= pokemon.level %> </p>
+<% end %>
