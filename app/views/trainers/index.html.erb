@@ -6,7 +6,10 @@
         <tbody>
           <% @trainers.each do |trainer| %>
             <tr>
-              <%= render trainer %>
+            <%= render trainer %>
+              <% Pokemon.find_by(:tainer => trainer) do |pokemon| %>
+                  <%= render pokemon %>
+                <%end%>
             </tr>
           <% end %>
         </tbody>
