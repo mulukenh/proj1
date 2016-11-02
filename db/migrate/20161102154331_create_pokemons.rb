@@ -7,6 +7,7 @@ class CreatePokemons < ActiveRecord::Migration
       t.string :integer
       t.string :trainer_id
       t.string :integer
+      t.integer :trainer_id
 
       t.timestamps null: false
     end
