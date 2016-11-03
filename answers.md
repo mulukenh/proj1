@@ -18,6 +18,8 @@ that pokemons who don't have trainers. (trainers == nil)
 
 # Question 4: What did you pass into the redirect_to? If it is a path, what did that path need? If it is not a path, why is it okay not to have a path here?
 
+- I passed the path to the current trainer and the id. When it is empty it gives error. So it's not okay to leave the redirect blank unless we have a view for the damage method.
+
 # Question 5: Explain how putting this line "flash[:error] = @pokemon.errors.full_messages.to_sentence" shows error messages on your form.
 
 # Give us feedback on the project and decal below!
